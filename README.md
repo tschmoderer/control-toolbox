@@ -1,6 +1,6 @@
 <div id="control-toolbox-logo" align="center">
     <br />
-    <img src="#" alt="Control ToolBox Logo" width="128" id="control-toolbox-logo-img"/>
+    <img src=".github/img/icons/rocket.svg" alt="Control ToolBox Logo" width="100" id="control-toolbox-logo-img"/>
     <h1>Control Toolbox</h1>
     <h4>A C++ toolbox for control systems</h4>
     <hr/>
@@ -14,13 +14,11 @@ Table of contents
 - [Examples](#examples)
 - [Documentation](#documentation)
 - [Build \& Install](#build--install)
-  - [Requirement](#requirement)
-  - [Unix](#unix)
 - [Credits](#credits)
 
 # Purposes
 
-# Example
+# Examples
 
 # Documentation
 
