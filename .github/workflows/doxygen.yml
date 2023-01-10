@@ -8,6 +8,7 @@ on:
       - '**.cpp'
       - '**.hpp'
       - 'docs/doxyfile.in'
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
