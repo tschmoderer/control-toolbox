@@ -1,4 +1,6 @@
 # Configure Doxygen file
+set(IMG ${DOCS}/img)
+
 set(DOXYGEN_IN  ${DOCS}/doxyfile.in)
 set(DOXYGEN_OUT ${DOCS}/doxyfile.conf)
 
