@@ -25,12 +25,6 @@
 var NAVTREE =
 [
   [ "Control ToolBox", "index.html", [
-    [ "Table of contents", "index.html#autotoc_md0", null ],
-    [ "Purposes", "index.html#autotoc_md1", null ],
-    [ "Examples", "index.html#autotoc_md2", null ],
-    [ "Documentation", "index.html#autotoc_md3", null ],
-    [ "Build & Install", "index.html#autotoc_md4", null ],
-    [ "Credits", "index.html#autotoc_md5", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
