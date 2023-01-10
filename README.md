@@ -6,7 +6,7 @@
     <hr/>
 </div>
 
- [![build](https://github.com/tschmoderer/control-toolbox/actions/workflows/cmake.yml/badge.svg?branch=main)](https://github.com/tschmoderer/control-toolbox/actions/workflows/cmake.yml) [![docs](https://github.com/tschmoderer/control-toolbox/actions/workflows/doxygen.yml/badge.svg?branch=main)](https://tschmoderer.github.io/control-toolbox/html/index.html) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/tschmoderer/control-toolbox/blob/master/LICENSE) [![Lib Version](https://img.shields.io/badge/Library-v-blue)](https://github.com/tschmoderer/control-toolbox/releases)
+[![language-cpp](https://img.shields.io/badge/Language-C%2B%2B-blue)](https://github.com/tschmoderer/control-toolbox/search?l=c%2B%2B&type=code) [![build](https://github.com/tschmoderer/control-toolbox/actions/workflows/cmake.yml/badge.svg?branch=main)](https://github.com/tschmoderer/control-toolbox/actions/workflows/cmake.yml) [![docs](https://github.com/tschmoderer/control-toolbox/actions/workflows/doxygen.yml/badge.svg?branch=main)](https://tschmoderer.github.io/control-toolbox/html/index.html) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/tschmoderer/control-toolbox/blob/master/LICENSE) [![Library version](https://img.shields.io/github/v/tag/tschmoderer/control-toolbox?color=blue&label=Library)](https://github.com/tschmoderer/control-toolbox/releases)
 
 Table of contents
 =================
