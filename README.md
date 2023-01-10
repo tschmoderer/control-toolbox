@@ -1,6 +1,6 @@
 <div id="control-toolbox-logo" align="center">
     <br />
-    <img src="docs/img/icons/rocket.svg" alt="Control ToolBox Logo" width="100" id="control-toolbox-logo-img"/>
+    <img src="docs/assets/img/icons/rocket.svg" alt="Control ToolBox Logo" width="100" id="control-toolbox-logo-img"/>
     <h1>Control Toolbox</h1>
     <h4>A C++ toolbox for control systems</h4>
     <hr/>
