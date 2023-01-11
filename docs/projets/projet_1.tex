@@ -1,0 +1,58 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{geometry}
+
+\geometry{
+    left=20mm,
+    top=0mm,
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{Projet Analyse Numérique GM3 \\ {\Large Contribution à \emph{Control Toolbox} : Euler-Explicite}}
+\author{T. Schmoderer\thanks{\href{mailto:timothee.schmoderer@insa-rouen.fr}{timothee.schmoderer@insa-rouen.fr}} \and A. Tonnoir\thanks{\href{mailto:antoine.tonnoir@insa-rouen.fr}{antoine.tonnoir@insa-rouen.fr}}}
+\date{11 Janvier 2023}
+
+\begin{document}
+\maketitle
+
+    La bibliothèque C\texttt{++} \emph{Control Toolbox} est développé dans le but de simuler de façon efficace les trajectoires des systèmes dynamique contrôlés. Dans ce cadre, L'\textbf{objectif} du projet est d'implémenter une méthode numérique de calcul des trajectoires d'un système dynamique classique 
+    \begin{align}\label{eq-ode}
+        \dot{x}(t) &= f(t,x), \quad x\in \mathbb{R}^n, \quad t\in[t_0,t_1],\quad x(t_0)=x_0.
+    \end{align}
+    \noindent
+    Nous vous proposons d'implémenter la méthode d'\textbf{Euler-explicite} pour intégrer numériquement les ODEs du types \cref{eq-ode}.
+
+\paragraph{Organisation du projet.}
+    Le développement se fera sur le dépôt git de la bibliothèque : \href{https://github.com/tschmoderer/control-toolbox}{lien}. Pour mener le projet à son terme, nous organiserons une rencontre au début pour clarifier et définir les objectifs du projet. Si besoin, nous pourrons organiser une seconde rencontre pour débloquer d'éventuels problèmes. 
+
+\paragraph{Travail attendu.}
+    \begin{enumerate}
+        \item Sur une nouvelle branche du dépôt, implémenter la méthode en C\texttt{++}, 
+        \item Écrire la documentation de votre fonction, 
+        \item Écrire un programme test,
+        \item Écrire un programme d'exemple, 
+        \item Écrire une pull-request vers le dépôt git pour intégrer votre travail. 
+    \end{enumerate} 
+
+\paragraph{Critères d'évaluation.}Le travail sera évalué sur la base des rencontres effectuées pendant la réalisation du projet, sur un court rapport contenant les éléments suivants: 
+
+\begin{enumerate}
+    \item Présentation générale: présentation claire et concise du problème, justification des méthodes employées.
+    \item Programmation: Clarté et lisibilité du code, absence de calculs inutiles, rapidité d’exécution.
+    \item Résultats numériques: Qualité des figures et leur analyse. 
+    \item Conclusion: Mise en perspective du projet et votre formation en analyse numérique. 
+\end{enumerate}
+
+\end{document}
