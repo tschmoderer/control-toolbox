@@ -1,7 +1,3 @@
-# Use CTest for unitary testing
-include(CTest)
-enable_testing()
-
 # add memcheck test
 if (NOT TARGET memcheck)
 add_custom_target(memcheck

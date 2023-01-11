@@ -11,6 +11,9 @@ include(variables)
 # Retrieve project version
 include(version)
 
+# Use CTest for unitary testing
+include(CTest)
+
 # Execute subdirectories
 add_subdirectory(${DOCS})
 add_subdirectory(${SRC})
