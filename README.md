@@ -11,7 +11,6 @@
 Table of contents
 =================
 
-- [Table of contents](#table-of-contents)
 - [Purposes](#purposes)
 - [Examples](#examples)
 - [Documentation](#documentation)
