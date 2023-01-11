@@ -28,6 +28,14 @@ TimeVector::TimeVector(TIME_VECTOR_DIM_T dim, Time_t t[]) {
     assert(this->check()); 
 }
 
+/**
+ * @brief Construct a new Time Vector::TimeVector object
+ * Construct a TimeVector object with equally spaced timestamps between t0 and t1
+ * @param t0 
+ * @param t1
+ * @param n 
+ * @warning The dimension should be at least 2
+ */
 TimeVector::TimeVector(Time_t t0, Time_t t1, TIME_VECTOR_DIM_T n) {
     assert(n >= 2);
     this->t0_ = t0; 
