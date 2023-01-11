@@ -12,10 +12,6 @@
    <link rel="shortcut icon" href="rocket-bw.ico" type="image/x-icon" />
    <script type="text/javascript" src="jquery.js"></script>
    <script type="text/javascript" src="dynsections.js"></script>
-   <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -69,23 +65,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('controltlbx_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -100,60 +79,57 @@ $(document).ready(function(){initNavTree('controltlbx_8hpp_source.html',''); ini
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">controltlbx.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="controltlbx_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef CNTRLTLBX_HPP</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define CNTRLTLBX_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/* INCLUDES */</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8hpp.html">utils.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">types/types.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* VERSION MACROS */</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">   10</a></span>&#160;<span class="preprocessor">#define VERSION_MPP_TLBX &quot;@CMAKE_LIB_VERSION@&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">   11</a></span>&#160;<span class="preprocessor">#define AUTHOR_MPP_TLBX  &quot;@AUTHOR@&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">   12</a></span>&#160;<span class="preprocessor">#define CONTACT_MPP_TLBX &quot;@AUTHOR_MAIL@&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">   13</a></span>&#160;<span class="preprocessor">#define DOCUMENTATION_MPP_TLBX &quot;@DOCUMENTATION_ADDR@&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">   14</a></span>&#160;<span class="preprocessor">#define CODE_MPP_TLBX &quot;@CODE_ADDR@&quot;</span> </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">hello_world_control_tlbx</a>() {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Welcome to the Control Toolbox&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Version       : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">VERSION_MPP_TLBX</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Code          : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">CODE_MPP_TLBX</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Documentation : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">DOCUMENTATION_MPP_TLBX</a> &lt;&lt; std::endl; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Contact       : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">AUTHOR_MPP_TLBX</a>  &lt;&lt; <span class="stringliteral">&quot; - &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">CONTACT_MPP_TLBX</a> &lt;&lt; std::endl; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;--&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_a1eb22fa90be3d6f34044b84bd1bca57e"><div class="ttname"><a href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">VERSION_MPP_TLBX</a></div><div class="ttdeci">#define VERSION_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:10</div></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_a36bae55e49f9d1879096c746332ab60c"><div class="ttname"><a href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">CODE_MPP_TLBX</a></div><div class="ttdeci">#define CODE_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:14</div></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_a3ff5b1fcf9f2ea50f3a2989a956d7368"><div class="ttname"><a href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">CONTACT_MPP_TLBX</a></div><div class="ttdeci">#define CONTACT_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:12</div></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_a5e599ccabb463fa085c1228f96a1fc57"><div class="ttname"><a href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">AUTHOR_MPP_TLBX</a></div><div class="ttdeci">#define AUTHOR_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:11</div></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_aa444c8fc7b01a2391937130098dfead9"><div class="ttname"><a href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">hello_world_control_tlbx</a></div><div class="ttdeci">void hello_world_control_tlbx()</div><div class="ttdoc">Welcome function.</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:19</div></div>
-<div class="ttc" id="acontroltlbx_8hpp_html_ae99cad39010956165e7620a3248f6d87"><div class="ttname"><a href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">DOCUMENTATION_MPP_TLBX</a></div><div class="ttdeci">#define DOCUMENTATION_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:13</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef CNTRLTLBX_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define CNTRLTLBX_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* INCLUDES */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8hpp.html">utils.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">types/types.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/* VERSION MACROS */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">   21</a></span>&#160;<span class="preprocessor">#define VERSION_MPP_TLBX       &quot;0.0.0&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">   22</a></span>&#160;<span class="preprocessor">#define AUTHOR_MPP_TLBX        &quot;T. Schmoderer&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">   23</a></span>&#160;<span class="preprocessor">#define CONTACT_MPP_TLBX       &quot;iathena@mailo.com&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">   24</a></span>&#160;<span class="preprocessor">#define DOCUMENTATION_MPP_TLBX &quot;https://tschmoderer.github.io/control-toolbox/html/index.html&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">   25</a></span>&#160;<span class="preprocessor">#define CODE_MPP_TLBX          &quot;https://github.com/tschmoderer/control-toolbox&quot;</span> </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">hello_world_control_tlbx</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Welcome to the Control Toolbox&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Version       : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">VERSION_MPP_TLBX</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Code          : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">CODE_MPP_TLBX</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Documentation : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">DOCUMENTATION_MPP_TLBX</a> &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Contact       : &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">AUTHOR_MPP_TLBX</a>  &lt;&lt; <span class="stringliteral">&quot; - &quot;</span> &lt;&lt; <a class="code" href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">CONTACT_MPP_TLBX</a> &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;--&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_a1eb22fa90be3d6f34044b84bd1bca57e"><div class="ttname"><a href="controltlbx_8hpp.html#a1eb22fa90be3d6f34044b84bd1bca57e">VERSION_MPP_TLBX</a></div><div class="ttdeci">#define VERSION_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:21</div></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_a36bae55e49f9d1879096c746332ab60c"><div class="ttname"><a href="controltlbx_8hpp.html#a36bae55e49f9d1879096c746332ab60c">CODE_MPP_TLBX</a></div><div class="ttdeci">#define CODE_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:25</div></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_a3ff5b1fcf9f2ea50f3a2989a956d7368"><div class="ttname"><a href="controltlbx_8hpp.html#a3ff5b1fcf9f2ea50f3a2989a956d7368">CONTACT_MPP_TLBX</a></div><div class="ttdeci">#define CONTACT_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:23</div></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_a5e599ccabb463fa085c1228f96a1fc57"><div class="ttname"><a href="controltlbx_8hpp.html#a5e599ccabb463fa085c1228f96a1fc57">AUTHOR_MPP_TLBX</a></div><div class="ttdeci">#define AUTHOR_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:22</div></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_aa444c8fc7b01a2391937130098dfead9"><div class="ttname"><a href="controltlbx_8hpp.html#aa444c8fc7b01a2391937130098dfead9">hello_world_control_tlbx</a></div><div class="ttdeci">void hello_world_control_tlbx()</div><div class="ttdoc">Welcome function.</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:30</div></div>
+<div class="ttc" id="acontroltlbx_8hpp_html_ae99cad39010956165e7620a3248f6d87"><div class="ttname"><a href="controltlbx_8hpp.html#ae99cad39010956165e7620a3248f6d87">DOCUMENTATION_MPP_TLBX</a></div><div class="ttdeci">#define DOCUMENTATION_MPP_TLBX</div><div class="ttdef"><b>Definition:</b> controltlbx.hpp:24</div></div>
 <div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 <div class="ttc" id="autils_8hpp_html"><div class="ttname"><a href="utils_8hpp.html">utils.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath">
-  <!-- id is needed for treeview function! -->
-  <ul>
-    <li><a href="mailto:iathena@mailo.fr"><i class="fa fa-fw fa-envelope-square"
-      aria-hidden="true"></i> Email</a></li>
-    <li><a href="https://github.com/tschmoderer/cpp-linear-algebra-toolbox" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i>
-    Github</a></li>
-    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="controltlbx_8hpp.html">controltlbx.hpp</a></li>
-    <li class="footer">Generated on Wed Jan 11 2023 10:30:00 for Control ToolBox by <a href="https://www.doxygen.org/index.html"><img class="footer"
-          src="doxygen.svg" width="104" height="31" alt="doxygen" /></a> 1.9.1 </li>
-  </ul>
-</div>
+<hr class="footer" />
+<address class="footer"><small>
+    Generated on Wed Jan 11 2023 20:07:36 for Control ToolBox by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+        width="104" height="31" alt="doxygen" /></a> 1.9.1
+  </small></address>
 <script type="text/javascript" src="custom.js"></script>
 </body>
 </html>

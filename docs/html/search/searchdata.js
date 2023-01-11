@@ -6,7 +6,8 @@ var indexSectionsWithContent =
   3: "cghlnost~",
   4: "t",
   5: "o",
-  6: "acdmstv"
+  6: "acdmstv",
+  7: "c"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "typedefs",
   5: "related",
-  6: "defines"
+  6: "defines",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Functions",
   4: "Typedefs",
   5: "Friends",
-  6: "Macros"
+  6: "Macros",
+  7: "Pages"
 };
 
