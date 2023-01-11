@@ -16,5 +16,6 @@ include(CTest)
 
 # Execute subdirectories
 add_subdirectory(${DOCS})
+add_subdirectory(${INC})
 add_subdirectory(${SRC})
 add_subdirectory(${TST})

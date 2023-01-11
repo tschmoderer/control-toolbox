@@ -1,17 +1,28 @@
+/**
+* @author    @AUTHOR@ (@AUTHOR_MAIL@)
+* @version   @CMAKE_LIB_VERSION@
+* @date      @TODAY@
+* @copyright Copyright (c) @YEAR@. All rights reserved. This project is released under the @LICENSE@.
+*/
 
 #ifndef CNTRLTLBX_HPP
 #define CNTRLTLBX_HPP
+
+/**
+* @mainpage Control ToolBox @image{inline} html rocket.svg width=32px
+* This is the API documentation for the Control Toolbox library.
+*/
 
 /* INCLUDES */
 #include "utils.hpp"
 #include "types/types.hpp"
 
 /* VERSION MACROS */
-#define VERSION_MPP_TLBX "@CMAKE_LIB_VERSION@"
-#define AUTHOR_MPP_TLBX  "@AUTHOR@"
-#define CONTACT_MPP_TLBX "@AUTHOR_MAIL@"
+#define VERSION_MPP_TLBX       "@CMAKE_LIB_VERSION@"
+#define AUTHOR_MPP_TLBX        "@AUTHOR@"
+#define CONTACT_MPP_TLBX       "@AUTHOR_MAIL@"
 #define DOCUMENTATION_MPP_TLBX "@DOCUMENTATION_ADDR@"
-#define CODE_MPP_TLBX "@CODE_ADDR@" 
+#define CODE_MPP_TLBX          "@CODE_ADDR@" 
 
 /**
 * @brief Welcome function 
