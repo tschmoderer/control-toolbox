@@ -38,3 +38,4 @@ docs/doxyfile.conf
 .vscode/
 
 includes/controltlbx.hpp
+.DS_Store
